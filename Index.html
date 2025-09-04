@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffe Sipayung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.jpg" alt="Caffe Sipayung Logo" />
+            <h1>Caffe Sipayung</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Halaman</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Selamat Datang di Caffe Sipayung</h2>
+        <p>Tempat yang bagus dan canggih, Kamu Bisa Mesan Lewat Website ini Meski Dalam Keadaan Lagi Kebelet.....</p>
+    </header>
+
+    <div class="menu-items" id="menu">
+        <h2>Menu Kami</h2>
+        <div class="menu-item" data-id="ayam-goreng" data-name="Ayam Goreng" data-price="15000">
+            <img src="menu 1.jpg" alt="Ayam Goreng">
+            <h3>Ayam Goreng</h3>
+            <p>Harga: Rp 15.000</p>
+            <center><button class="order-button add-to-cart">Pesan</button></center>
+        </div>
+        <div class="menu-item" data-id="es-teh" data-name="Es Teh" data-price="3000">
+            <img src="menu 2.jpg" alt="Es Teh">
+            <h3>Es Teh</h3>
+            <p>Harga: Rp 3.000</p>
+            <button class="order-button add-to-cart">Pesan</button>
+        </div>
+        <div class="menu-item" data-id="juzz-jeruk" data-name="Juzz Jeruk" data-price="7000">
+            <img src="menu 3.jpg" alt="Juzz Jeruk">
+            <h3>Juzz Jeruk</h3>
+            <p>Harga: Rp 7.000</p>
+            <button class="order-button add-to-cart">Pesan</button>
+        </div>
+        <div class="menu-item" data-id="juzz-alpukat" data-name="Juzz Alpukat" data-price="5000">
+            <img src="menu 4.jpg" alt="Juzz Alpukat">
+            <h3>Juzz Alpukat</h3>
+            <p>Harga: Rp 5.000</p>
+            <button class="order-button add-to-cart">Pesan</button>
+        </div>
+        <div class="menu-item" data-id="nasi-goreng" data-name="Nasi Goreng" data-price="10000">
+            <img src="menu 5.jpg" alt="Nasi Goreng">
+            <h3>Nasi Goreng</h3>
+            <p>Harga: Rp 10.000</p>
+            <button class="order-button add-to-cart">Pesan</button>
+        </div>
+    </div>
+
+    <!-- Bagian Checkout -->
+    <div class="cart" id="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul class="cart-items" id="cart-items">
+            <!-- Item keranjang akan ditambahkan di sini -->
+        </ul>
+        <div class="cart-total">
+            <strong>Total: <span id="cart-total-price">Rp 0</span></strong>
+        </div>
+        <div class="customer-info">
+            <h2>Informasi Pengiriman</h2>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="text" id="telepon" name="telepon" required>
+
+            <label for="alamat">Alamat Lengkap:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+        </div>
+        <button class="order-button" id="checkout-button">Checkout</button>
+    </div>
+
+    <footer id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Email: caffesipayung@gmail.com</p>
+        <p>Telepon: (+62) 838-5193-0681</p>
+        <h6>LOKASI:</h6>
+        <p6>NEGERI DOLOK</p6>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
